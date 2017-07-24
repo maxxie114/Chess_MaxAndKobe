@@ -10,6 +10,7 @@ player2_letter = None
 turn = None
 
 
+#hello max
 
 #start the game
 def get_starting_player():
