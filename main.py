@@ -1,3 +1,5 @@
+#Changes: Successfully create a gameboard with two colors, yellow, and brown. 
+
 from processing import *
 import gameboard
 
