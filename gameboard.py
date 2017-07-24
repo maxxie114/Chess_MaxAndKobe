@@ -22,6 +22,49 @@ board = [ [[None, "brown"],[None,"yellow"],[None,"brown"],[None, "yellow"],[None
 
 #Draw the box
 def drawBoard(board):
+  text("♟", , )
+  text("♟")
+  text("♟")
+  text("♟")
+  text("♟")
+  text("♟")
+  text("♟")
+  text("♟")
+  #Red Knights
+  text("♞")
+  text("♞")
+  #Red Bishops
+  text("♝")
+  text("♝")
+  #Red Rooks
+  text("♜")
+  text("♜")
+  #Red Queen
+  text("♛")
+  #Red Kings
+  text("♚")
+  #White Pawns
+  text("♙")
+  text("♙")
+  text("♙")
+  text("♙")
+  text("♙")
+  text("♙")
+  text("♙")
+  text("♙")
+  #White Knights
+  text("♘")
+  text("♘")
+  #White Bishops
+  text("♗")
+  text("♗")
+  #White Rooks
+  text("♖")
+  text("♖")
+  #White Queen
+  text("♕")
+  #White King
+  text("♔")
   global r
   global g
   global b
