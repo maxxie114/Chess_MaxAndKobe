@@ -12,7 +12,7 @@ pieces = gameboard.pieces
 
 #start the game
 def get_starting_player():
-  random_num = int(random(3))
+  random_num = 1
   # print("get_starting_player() functional")  #test code
   if random_num == 0:
       # print("random = 0")  #test code
@@ -28,10 +28,11 @@ def run_player_turn(player_letter):
   global pieces
   #print("run_player_turn() functional")   #test code
   if mouse.pressed and board[mouse.y//70][mouse.x//70][0] != None:
-    pieces.append(board[mouse.y//70][mouse.x//70][0])
-    print(pieces) #test code
+    # ###pieces.append(board[mouse.y//70][mouse.x//70][0])
     board[mouse.y//70][mouse.x//70][0] = None
-   # gameboard.drawBoard(board)
+    # print(pieces) #test code
+    #board[mouse.y//70][mouse.x//70][0] = None
+    #gameboard.drawBoard(board)
   #elif mouse.pressed and board[mouse.y//70][mouse.x//70][0] != None:
     #pieces.append(board[mouse.y//70][mouse.x//70][0])
     #print(pieces) #test code
@@ -39,22 +40,24 @@ def run_player_turn(player_letter):
    # gameboard.drawBoard(board)
     return True
   else:
-    return False
+    return False #erase the og pieces
     
     
 def run_Player2_turn(player2_letter):
   global board
   global pieces
+  number = 2
   # print("run_player_turn() functional")   #test code
   if mouse.pressed and board[mouse.y//70][mouse.x//70][0] != None:
     pieces.append(board[mouse.y//70][mouse.x//70][0])
-    print(pieces) #test code
+    # print(pieces) #test code
     board[mouse.y//70][mouse.x//70][0] = None
     gameboard.drawBoard(board)
-    board[mouse.y//70][mouse.x//70][0] = player2_letter
+    board[mouse.y//70][mouse.x//70][0] = pieces[number]
+    print(pieces) #test code
     return True
   else:
-    return False
+    return False 
  
               
               
