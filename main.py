@@ -1,4 +1,6 @@
-#Changes: Successfully create a gameboard with two colors, yellow, and brown. 
+#This is a chess game that is created by Max and Kobe with processing python module. As a final project
+#Everyone who read this code have the right to use it in your project. 
+#Changes: Added pieces in both sides of the chess board. 
 
 from processing import *
 import gameboard
@@ -10,7 +12,6 @@ player2_letter = None
 turn = None
 
 
-#hello max
 
 #start the game
 def get_starting_player():
