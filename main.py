@@ -93,6 +93,11 @@ def draw():
       turn = "player"
   
 
+#Selecting System
+def mouseClicked(): 
+  if player_letter:
+    
+  else:
 
 #The execute function lol
 run()
