@@ -1,7 +1,3 @@
-#This is a chess game that is created by Max and Kobe with processing python module. As a final project
-#Everyone who read this code have the right to use it in your project. 
-#Changes: Added pieces in both sides of the chess board. 
-
 from processing import *
 import gameboard
 
@@ -10,6 +6,7 @@ board = gameboard.board
 player_letter = None
 player2_letter = None
 turn = None
+pieces = gameboard.pieces
 
 
 
@@ -27,10 +24,17 @@ def get_starting_player():
 #run player turn	
 def run_player_turn(player_letter):
   global board
+  global pieces
   # print("run_player_turn() functional")   #test code
-  if mouse.pressed and board[mouse.y//70][mouse.x//70][0] == None:
-    board[mouse.y//70][mouse.x//70][0] = player_letter
-    # print(x, y) #test code
+  if mouse.pressed and board[mouse.y//70][mouse.x//70][0] != None:
+    pieces.append(board[mouse.y//70][mouse.x//70][0])
+    print(pieces) #test code
+    board[mouse.y//70][mouse.x//70][0] = None
+    #gameboard.drawBoard(board)
+  elif mouse.pressed and board[mouse.y//70][mouse.x//70][0] != None:
+    board[mouse.y//70][mouse.x//70][0] = player2_letter
+    # gameboard.drawBoard(board)
+    # print(pieces) #test code
     return True
   else:
     return False
@@ -78,10 +82,12 @@ def draw():
   global turn
   global player_letter
   global player2_letter
+  global pieces
   # print("draw() functional")  #test code
   # print("turn =", turn) #test code
   #run all the functions that is needed
   # drawBoard(board)
+  # print(pieces)
   gameboard.drawLetters(board)
   if turn == "player":
     if run_player_turn(player_letter):
@@ -91,13 +97,16 @@ def draw():
     if run_Player2_turn(player2_letter):
       # print("ran player2 turn")  #test code
       turn = "player"
+#Selecting System
+# def mouseClicked(): 
+#   if player_letter:
+#     board[0][6][0] = "♟"
+#   elif player_letter:
+#   else:
+    
+  
   
 
-#Selecting System
-def mouseClicked(): 
-  if player_letter:
-    
-  else:
 
 #The execute function lol
 run()
