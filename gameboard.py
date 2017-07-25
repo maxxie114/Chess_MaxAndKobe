@@ -22,6 +22,9 @@ board = [ [[None, "brown"],[None,"yellow"],[None,"brown"],[None, "yellow"],[None
 ]
 
 
+pieces = []
+
+
 # print("status report:\n")  #test code
 
 #Draw the box
