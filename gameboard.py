@@ -1,3 +1,7 @@
+#This is a chess game that is created by Max and Kobe as a final project. 
+#This is the class that is in charge of drawing the pieces and creating the board. 
+
+
 from processing import *
 
 
@@ -22,49 +26,6 @@ board = [ [[None, "brown"],[None,"yellow"],[None,"brown"],[None, "yellow"],[None
 
 #Draw the box
 def drawBoard(board):
-  text("♟", , )
-  text("♟")
-  text("♟")
-  text("♟")
-  text("♟")
-  text("♟")
-  text("♟")
-  text("♟")
-  #Red Knights
-  text("♞")
-  text("♞")
-  #Red Bishops
-  text("♝")
-  text("♝")
-  #Red Rooks
-  text("♜")
-  text("♜")
-  #Red Queen
-  text("♛")
-  #Red Kings
-  text("♚")
-  #White Pawns
-  text("♙")
-  text("♙")
-  text("♙")
-  text("♙")
-  text("♙")
-  text("♙")
-  text("♙")
-  text("♙")
-  #White Knights
-  text("♘")
-  text("♘")
-  #White Bishops
-  text("♗")
-  text("♗")
-  #White Rooks
-  text("♖")
-  text("♖")
-  #White Queen
-  text("♕")
-  #White King
-  text("♔")
   global r
   global g
   global b
@@ -80,6 +41,55 @@ def drawBoard(board):
       # print(board[0][0][1]) #test code
       rect(x*70, y*70, 70, 70)
       fill(r, g, b)
+  textSize(40)
+  fill(0,0,0)
+  #White Pawns
+  board[0][1][0] = "♙"
+  board[1][1][0] = "♙"
+  board[2][1][0] = "♙"
+  board[3][1][0] = "♙"
+  board[4][1][0] = "♙"
+  board[5][1][0] = "♙"
+  board[6][1][0] = "♙"
+  board[7][1][0] = "♙"
+  #White Knights
+  board[1][0][0] = "♘"
+  board[6][0][0] = "♘"
+  #White Bishops
+  board[2][0][0] = "♗"
+  board[5][0][0] = "♗"  
+  #White Castle
+  board[0][0][0] = "♖"
+  board[7][0][0] = "♖"
+  #White Queen
+  board[3][0][0] = "♕"
+  #White King
+  board[4][0][0] = "♔"
+  
+  
+  
+  # black Pawns
+  board[0][6][0] = "♟"
+  board[1][6][0] = "♟"
+  board[2][6][0] = "♟"
+  board[3][6][0] = "♟"
+  board[4][6][0] = "♟"
+  board[5][6][0] = "♟"
+  board[6][6][0] = "♟"
+  board[7][6][0] = "♟"
+  #Black Knights
+  board[1][7][0] = "♞"
+  board[6][7][0] = "♞"  
+  #Black Bishops
+  board[2][7][0] = "♝"
+  board[5][7][0] = "♝"
+  #Black Rooks
+  board[0][7][0] = "♜"
+  board[7][7][0] = "♜"
+  #Black Queen
+  board[3][7][0] = "♛"
+  #Black Kings
+  board[4][7][0] = "♚"
 
 #Draw letters
 def drawLetters(board):
