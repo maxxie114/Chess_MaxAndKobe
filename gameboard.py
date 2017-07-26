@@ -144,3 +144,48 @@ def brown():
   r = 204
   g = 102
   b = 0  
+          
+          
+  #Will this Code help in any way?????
+listofColumns = ["A", "B", "C", "D", "E", "F", "G", "H"]
+listofCoordinates = [1, 2, 3, 4, 5, 6, 7, 8]
+  
+
+def position_of_xCoor(self, position):
+  for i in range(0,8):
+    if self.listofColumns[i] -- position[0]:
+      return row
+      
+def position_to_yCoor(self, position):
+  column - 8 - int(position[1])
+  return column
+  
+  
+#Game rules for valid moves
+def validMove(self, color, row1, column1, row2, column2):
+  slopes = {
+    #Black Pawn
+    "♟" : [10.0, 1.0, -1.0],
+    #Black Knight
+    "♞" : [2.0, -2.0, 0.5, -0.5],
+    #Black Bishop
+    "♝" : [1.0, -1.0],
+    #Black Rook
+    "♜" : [0.0, 10.0],
+    #Black Queen
+    "♛" : [1.0, -1.0, 0.0, 10.0],
+    #Black King
+    "♚" : [0.0, 1.0, -1.0, 10]
+    #White Pawn
+    #"♙" : [10.0, 1.0, -1.0],
+    #White Knight
+    #"♘" : [2.0, -2.0, 0.5, -0.5],
+    #White Bishop
+    #"♗" : [1.0, -1.0],
+    #White Rook
+    #"♖" : [0.0, 10.0],
+    #White Queen
+    #"♕" : [1.0, -1.0, 0.0, 10.0],
+    #White King
+    #"♔" : [0.0, 1.0, -1.0, 10]
+          
