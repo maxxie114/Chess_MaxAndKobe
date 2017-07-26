@@ -115,12 +115,7 @@ def draw():
       # print("ran player2 turn")  #test code
       turn = "player"
       gameboard.movePieces(board)
-#Selecting System
-# def mouseClicked(): 
-#   if player_letter:
-#     board[0][6][0] = "♟"
-#   elif player_letter:
-#   else:
+
     
   
   
