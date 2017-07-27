@@ -2,10 +2,6 @@
 
 
 
-
-
-
-
 #This is a chess game that is created by Max and Kobe as a final project. 
 #This is the class that is in charge of drawing the pieces and creating the board. 
 
@@ -58,7 +54,7 @@ def drawBoard(board):
 
   
 #Draw the new sequence
-def movePieces(board):
+def redrawSequence(board):
     # print("")  #test code
     for row in range(len(board)):
       for col in range(len(board[0])):
@@ -146,7 +142,7 @@ def brown():
   b = 0  
           
           
-  #Will this Code help in any way?????
+  #Will this Code help in any way?????  #Wirh some changes, possibly. 
 listofColumns = ["A", "B", "C", "D", "E", "F", "G", "H"]
 listofCoordinates = [1, 2, 3, 4, 5, 6, 7, 8]
   
@@ -162,30 +158,29 @@ def position_to_yCoor(self, position):
   
   
 #Game rules for valid moves
-def validMove(self, color, row1, column1, row2, column2):
-  slopes = {
-    #Black Pawn
-    "♟" : [10.0, 1.0, -1.0],
-    #Black Knight
-    "♞" : [2.0, -2.0, 0.5, -0.5],
-    #Black Bishop
-    "♝" : [1.0, -1.0],
-    #Black Rook
-    "♜" : [0.0, 10.0],
-    #Black Queen
-    "♛" : [1.0, -1.0, 0.0, 10.0],
-    #Black King
-    "♚" : [0.0, 1.0, -1.0, 10]
-    #White Pawn
-    #"♙" : [10.0, 1.0, -1.0],
-    #White Knight
-    #"♘" : [2.0, -2.0, 0.5, -0.5],
-    #White Bishop
-    #"♗" : [1.0, -1.0],
-    #White Rook
-    #"♖" : [0.0, 10.0],
-    #White Queen
-    #"♕" : [1.0, -1.0, 0.0, 10.0],
-    #White King
-    #"♔" : [0.0, 1.0, -1.0, 10]
-          
+# def validMove(self, color, row1, column1, row2, column2):
+#   slopes = {
+#     #Black Pawn
+#     "♟" : [10.0, 1.0, -1.0],
+#     #Black Knight
+#     "♞" : [2.0, -2.0, 0.5, -0.5],
+#     #Black Bishop
+#     "♝" : [1.0, -1.0],
+#     #Black Rook
+#     "♜" : [0.0, 10.0],
+#     #Black Queen
+#     "♛" : [1.0, -1.0, 0.0, 10.0],
+#     #Black King
+#     "♚" : [0.0, 1.0, -1.0, 10]
+#     #White Pawn
+#     #"♙" : [10.0, 1.0, -1.0],
+#     #White Knight
+#     #"♘" : [2.0, -2.0, 0.5, -0.5],
+#     #White Bishop
+#     #"♗" : [1.0, -1.0],
+#     #White Rook
+#     #"♖" : [0.0, 10.0],
+#     #White Queen
+#     #"♕" : [1.0, -1.0, 0.0, 10.0],
+#     #White King
+#     #"♔" : [0.0, 1.0, -1.0, 10]
